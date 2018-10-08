@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 var fs = require("fs");
 var path = require('path');
-var route = require(path.resolve('../nodejs-REST-demo/application.js'));
+var route = require(path.resolve('../testProject/application.js'));
 
 app.get('/myapp',function (req, res) {
     console.log(`The ApplicationType is %s`,req.get('ApplicationType'));
